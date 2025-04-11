@@ -1,42 +1,35 @@
-# Scoop Bucket Template
+# Scoop 存储桶模板
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/PoeraWork/Scoop/actions/workflows/ci.yml/badge.svg)](https://github.com/PoeraWork/Scoop/actions/workflows/ci.yml) [![Excavator](https://github.com/PoeraWork/Scoop/actions/workflows/excavator.yml/badge.svg)](https://github.com/PoeraWork/Scoop/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+用于 [Scoop](https://scoop.sh) 的 Windows 命令行安装程序的模板存储桶。
 
-## How do I use this template?
+## 我如何使用这个模板？
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+1. 使用“使用此模板”按钮生成此存储库的副本。
+2. 允许所有 GitHub Actions：
+   - 导航到 `Settings` - `Actions` - `General` - `Actions permissions`。
+   - 选择 `Allow all actions and reusable workflows`。
+   - 然后点击 `Save`。
+3. 允许从 GitHub Actions 写入存储库：
+   - 导航到 `Settings` - `Actions` - `General` - `Workflow  permissions`。
+   - 选择 `Read and write permissions`。
+   - 然后点击 `Save`。
+4. 在 `README.md` 中记录存储桶。
+5. 替换 `bin/auto-pr.ps1` 中的占位符存储库字符串。
+6. 通过将 `bucket/app-name.json.template` 复制到 `bucket/<app-name>.json` 创建新的清单。
+7. 提交并推送更改。
+8. 如果希望您的存储桶在 `https://scoop.sh` 上被索引，请将主题 `scoop-bucket` 添加到您的存储库。
 
-## How do I install these manifests?
+## 我如何安装这些清单？
 
-After manifests have been committed and pushed, run the following:
+在提交并推送清单后，运行以下命令：
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add PoeraScoop https://github.com/PoeraWork/Scoop
+scoop install PoeraScoop/<manifestname>
 ```
 
-## How do I contribute new manifests?
+## 我如何贡献新的清单？
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+要进行新的清单贡献，请阅读 [贡献指南](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) 和 [应用清单](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) 维基页面。
