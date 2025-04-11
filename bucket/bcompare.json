@@ -1,0 +1,12 @@
+{
+    "version": "5.0.2",
+    "homepage": "https://github.com/PoeraWork/Scoop",
+    "description": "BCompare",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PoeraWork/Scoop/releases/download/V1.0/BCompare.7z",
+            "hash": "f7d9f44465e45d0f92778191cbf4fe04c5ab46fa5c5c27f309af4ad9c9b0b690"
+        }
+    },
+    "shortcuts": [["BCompare.exe", "BCompare"]]
+}
