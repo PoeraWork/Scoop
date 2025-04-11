@@ -1,12 +1,18 @@
 {
-    "version": "5.0.2",
+    "version": "5.0.2.30045",
     "homepage": "https://github.com/PoeraWork/Scoop",
     "description": "BCompare",
     "architecture": {
         "64bit": {
             "url": "https://github.com/PoeraWork/Scoop/releases/download/V1.0/BCompare.7z",
-            "hash": "f7d9f44465e45d0f92778191cbf4fe04c5ab46fa5c5c27f309af4ad9c9b0b690"
+            "hash": "735f7ec68473a7fa5fc067cad1e5d303748f1b275b6596bd29d10e11accdb315"
         }
     },
+    "persist": [
+        "BCState.xml",
+        "BCPreferences.xml",
+        "BCSessions.xml",
+        "BCColors.xml"
+    ],
     "shortcuts": [["BCompare.exe", "BCompare"]]
 }
