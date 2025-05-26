@@ -1,0 +1,13 @@
+{
+    "version": "6.22",
+    "homepage": "https://github.com/PoeraWork/Scoop",
+    "description": "Tasking630",
+    "notes": "Need install jre8: scoop install oraclejre8",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PoeraWork/Scoop/releases/download/V1.0/Tasking630.7z",
+            "hash": "b48102be55222897da040c0fe0f9aeb52bcf65478e10647e2ef8eb0949e7769e"
+        }
+    },
+    "shortcuts": [["ctc/eclipse/eclipse.exe", "Tasking630"]]
+}
