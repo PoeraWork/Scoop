@@ -11,7 +11,7 @@
     },
     "env_add_path": [
         "ctc/bin",
-        "bin",
+        "bin"
     ],
     "shortcuts": [["ctc/eclipse/eclipse.exe", "Tasking630"]]
 }
