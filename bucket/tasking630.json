@@ -1,8 +1,8 @@
 {
-    "version": "6.30",
+    "version": "6.30.1",
     "homepage": "https://github.com/PoeraWork/Scoop",
     "description": "Tasking630",
-    "notes": "Need install jre8: scoop install oraclejre8",
+    "notes": "Use GUI Need install jre8: scoop install oraclejre8",
     "architecture": {
         "64bit": {
             "url": "https://github.com/PoeraWork/Scoop/releases/download/V1.0/Tasking630.7z",
@@ -13,5 +13,8 @@
         "ctc/bin",
         "bin"
     ],
-    "shortcuts": [["ctc/eclipse/eclipse.exe", "Tasking630"]]
+    "shortcuts": [["ctc/eclipse/eclipse.exe", "Tasking630"]],
+    "env_set": {
+        "TASKING_PATH": "$dir"
+    }
 }
